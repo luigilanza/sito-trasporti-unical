@@ -3,85 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trasporti per l'Università della Calabria</title>
+  <title>Trasporti Università della Calabria</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background: url('https://www.unical.it/portale/portalmedia/foto/2023/07/unical_cubo.jpg') no-repeat center center fixed;
+      margin: 0;
+      padding: 0;
+      background: url('https://www.unical.it/portale/portale_files/images/unical-campus.jpg') no-repeat center center fixed;
       background-size: cover;
-      color: white;
-      text-align: center;
+      color: #fff;
     }
-
     header {
-      background: rgba(0, 0, 0, 0.7);
-      padding: 20px;
+      background-color: rgba(0,0,0,0.7);
+      text-align: center;
+      padding: 30px;
     }
-
     header h1 {
       margin: 0;
-      font-size: 28px;
+      font-size: 2.5em;
+      color: #ffcc00;
     }
-
     section {
-      background: rgba(0, 0, 0, 0.6);
-      margin: 20px auto;
+      background-color: rgba(0,0,0,0.6);
+      margin: 20px;
       padding: 20px;
       border-radius: 10px;
-      width: 90%;
-      max-width: 800px;
     }
-
     h2 {
       color: #ffcc00;
     }
-
-    .bus-links a, .ticket-buttons a, .strike-link a {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 20px;
-      border-radius: 8px;
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .buttons a {
+      background-color: #ffcc00;
+      color: #000;
+      padding: 10px 20px;
       text-decoration: none;
+      border-radius: 5px;
       font-weight: bold;
-      transition: 0.3s;
+      transition: background 0.3s;
     }
-
-    .bus-links a {
-      background-color: #0077cc;
-      color: white;
+    .buttons a:hover {
+      background-color: #e6b800;
     }
-
-    .bus-links a:hover {
-      background-color: #005fa3;
+    iframe {
+      width: 100%;
+      border: none;
+      border-radius: 10px;
     }
-
-    .ticket-buttons a {
-      background-color: #cc0000;
-      color: white;
+    .sponsor {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
     }
-
-    .ticket-buttons a:hover {
-      background-color: #a30000;
+    .sponsor img {
+      max-width: 200px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
     }
-
-    .strike-link a {
-      background-color: #ff6600;
-      color: white;
-    }
-
-    .strike-link a:hover {
-      background-color: #cc5200;
+    .sponsor img:hover {
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>🚍 Trasporti per l'Università della Calabria</h1>
-    <p>Aiutiamo studenti e pendolari a muoversi da e per l'Unical in modo semplice</p>
+    <p>Aiutiamo studenti e pendolari a muoversi facilmente da e per l'UNICAL.</p>
   </header>
 
+  <section>
+    <h2>🚌 Collegamenti autobus</h2>
+    <p>Consulta gli orari e acquista i biglietti dalle principali compagnie:</p>
+    <div class="buttons">
+      <a href="https://www.autoservizipreite.it/orari.html" target="_blank">Orari Preite</a>
+      <a href="https://www.x-system.tech/web/index.html?azienda=098098" target="_blank">Biglietti Preite</a>
+      <a href="https://www.consorzioautolineetpl.it/quadro_orario.php" target="_blank">Orari Consorzio</a>
+      <a href="https://www.mycicero.it/romano-kr/TPWebPortal/it" target="_blank">Orari & Biglietti Romano</a>
+      <a href="https://www.ferroviedellacalabria.it/" target="_blank">Ferrovie della Calabria</a>
+      <a href="https://www.iasscura.it/" target="_blank">IAS Scura</a>
+      <a href="https://www.lirosi.it/" target="_blank">Lirosi</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>📢 Notizie sugli scioperi</h2>
+    <p>Consulta qui sotto la bacheca ufficiale del Ministero delle Infrastrutture e Trasporti.</p>
+    <iframe src="https://scioperi.mit.gov.it/mit2/public/scioperi" height="600"></iframe>
+  </section>
+
+  <section>
+    <h2>🤝 I nostri sponsor</h2>
+    <p>Un grazie speciale ai partner che supportano questo progetto.</p>
+    <div class="sponsor">
+      <a href="https://www.sito-dello-sponsor.it" target="_blank">
+        <img src="assets/sponsor1.png" alt="Sponsor 1">
+      </a>
+    </div>
+  </section>
+
+</body>
+</html>
   <section>
     <h2>🚌 Orari autobus</h2>
     <div class="bus-links">
